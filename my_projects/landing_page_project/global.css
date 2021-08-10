@@ -1,0 +1,86 @@
+ /*13-If you have clasees that will used everywhere, write here.*/
+ /*14-Text*/
+ .text-center{
+     text-align: center; 
+ }
+
+ .heading-small{ /*16for example go to html and assign to h1 this class. */
+     font-size: 1rem;
+ }
+ .heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 1.75rem;
+}
+/*15-Colors*/
+.bg-dark-blue{
+    background-color: #062e51;
+}
+.bg-light-blue{
+    background-color: #336ea2;
+}
+
+/*21-make a conteiner that contains navbar*/
+.container{
+    max-width: 1100px;/*max will be 1100 px*/
+    margin: 0 auto;
+} 
+
+/*38-Buttons*/
+.button{
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem; /*bottom-up = 0.8 right-left=3*/
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    
+}
+.btn-primary{
+    margin-top: 1.25rem;
+    background-color: #336ea2;
+    padding: 0.8rem 3rem; /*bottom-up = 0.8 right-left=3*/
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+.btn-primary:hover{
+    color: #336ea2;
+    background-color: #fff;
+    border: 1px solid #336ea2;
+    font-weight: bolder;
+}
+.btn-dark{
+    margin-top: 1.25rem;
+    background-color: #333;
+    padding: 0.8rem 3rem; /*bottom-up = 0.8 right-left=3*/
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+.btn-dark:hover{
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #333;
+    font-weight: bolder;
+
+}
+.btn-block{/*39-I will make the button in all block*/
+    width: 100%;
+    text-align: center;
+
+}
+
+ /*56-footer part design*/
+ .form-group{
+     padding: 00.25rem;
+ }
+ .form-group label{ /*58- input area is on bottom now*/
+     display: block;
+ }
+.form-control{  /*59- form controls are bigger*/
+    width: 100%;
+    padding: 0.4;
+    font-size: 1rem; /*60- i cant adjust the text area*/
+    resize: none;
+    border-radius: 5px;
+}
+
+ 

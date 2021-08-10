@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <meta name="keyword" content="Python , Java, JavaScript">
+    <meta name="description">
+    <meta content="ozkan">
+    <!--1- Meta labels-->
+    <!--6-Add style from google fonts. Go there and select one or more font. Than get link from embed section-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 7-Go to cdnjs font avasome and get all.min-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--2-I am connecting my HTML pages with other CSS pages, main and global-->
+    <link rel="stylesheet" href="  global.css">
+    <link rel="stylesheet" href="  main.css">
+    <!--3-Tablet: If my max-width == 768 px get tablet CSS file. If i am under 750px tablet.css gonna work-->
+    <link rel="stylesheet" media="(max-width:768px" href=" tablet.css">
+    <!--4-mobile devices-->
+    <link rel="stylesheet" media="(max-width:500px" href=" mobile.css">
+    <!--5-Add style from google fonts. Go there and select one or more font. Than get link from embed section-->
+</head>
+
+<body>
+    <!--10-   <i class="fa fa-pencil-alt"></i>Check if icons working   -->
+    <!--12-   First of all make a structure   -->
+    <header class="bg-dark-blue">
+        <!--18-->
+        <div class="container"> <!--22-I opened a div element and took nav element in it. container centers the nav bar after 1100px-->
+            <nav id="navbar">
+                <h1 class="heading-small">Özkan Cöndek</h1><!--Most importent heading is h1-->
+                <!--17-->
+                <ul>
+                    <li> <a href="#home">Main Page</a></li>
+                    <li><a href="#training">Trainigs</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <section id="home"> <!--28 Open a section-->
+        <img src="profile.jpeg" alt="Özkan Cöndek" width="300px"> <!--29Add photo-->
+        <div class=" name text-center" > <!--30 Make a div and center elements-->
+            <h2 class="heading-big">Özkan Cöndek</h2> <!--32-got to global file and get heading-big class-->
+            <p>Fullstack Developer | Bootcamp Participant at Clarusway</p>
+        </div>
+        <a href="#courses" class="btn btn-dark">Go to Courses</a><!--31 Create a button-->
+
+    </section> <!--40-add a new section for trainings. id is the same with navbar-> trainings id-->
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium"><!--41-get text-center and heading-medium class from global-->Trainings</h3>
+        <div class="items">
+            <articles class="items">
+                <i class="fa fa-pencil-alt"></i><!--43- Add icon and multply article elements 3 times-->
+                <h3>In-Class</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempora!</p>
+            </articles>
+            <articles class="items">
+                <i class="fa fa-pencil-alt"></i> 
+                <h3>Online Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempora!</p>
+            </articles>
+            <articles class="items">
+                <i class="fa fa-pencil-alt"></i> 
+                <h3>Conferences</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempora!</p>
+            </articles>
+        </div>
+    </section>    
+    <section id="courses"><!--48-Section for courses-->
+        <h3 class="text-center heading-medium">Courses</h3>
+        <div class="conteiner">
+            <div class="courses"> 
+                <div class="course"> <!--Course 1-->
+                    <div class="course-image">
+                        <img src="pyhton.jpg" alt="Pyhton">
+                        <span>%90 Discount</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Full-Package Pyhton Course
+                        </div>
+                         <div class="description">
+                            Course Code : mls577
+                         </div>
+                         <div class="instructor">
+                            Özkan Cöndek
+                         </div>
+                         <div class="rating">
+                            4.7 | (+2000 Vote)
+                         </div>
+
+                    </div>
+                </div>
+                <div class="course"> <!--Course 2-->
+                    <div class="course-image">
+                        <img src=" JS.jpg" alt="Pyhton">
+                        <span>%80 Discount</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Full-Package JavaScript Course
+                        </div>
+                         <div class="description">
+                            Course Code : mls577
+                         </div>
+                         <div class="instructor">
+                            Özkan Cöndek
+                         </div>
+                         <div class="rating">
+                            4.7 | (+2000 Vote)
+                         </div>
+
+                    </div>
+                </div>
+                <div class="course"> <!--Course 3-->
+                    <div class="course-image">
+                        <img src="HTML.jpg" alt="Pyhton">
+                        <span>%70 Discount</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Full-Package HTML5 Course
+                        </div>
+                         <div class="description">
+                            Course Code : mls577
+                         </div>
+                         <div class="instructor">
+                            Özkan Cöndek
+                         </div>
+                         <div class="rating">
+                            4.7 | (+2000 Vote)
+                         </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>    
+    <!--55-Footer part-->
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">You can reach me!</h4>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input 
+                    type="text" 
+                    class= "form-control" 
+                    name = "name" id="name" 
+                    placeholder="Name">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input 
+                    type="text" 
+                    class= "form-control" 
+                    name = "email" id="email" 
+                    placeholder="Email">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea 
+                    name="message" 
+                    id="message"  
+                    class="form-control" 
+                    rows="10"
+                    placeholder="Message"></textarea>
+                    
+                </div>
+                <button type="submit" class="btn btn-block">Send</button>
+            </form>
+            <ul>
+                <li>
+                    <a href=""><i class="fab fa-facebook"></i></a> 
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter"></i></a> 
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a> 
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+            
+
+        
+
+    
+
+
+
+</body>
+
+</html>

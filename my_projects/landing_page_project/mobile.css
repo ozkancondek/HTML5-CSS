@@ -1,0 +1,33 @@
+/*   If i am under 750px this file gonna work*/
+
+/*24- My nav element looking flex rowand i want to them column for phone screen*/
+#navbar{
+    flex-direction: column;
+    padding-top: 0.5rem; /*Make them more seperate*/
+    padding-bottom: 0.5rem;
+    overflow: hidden; /*25-On phone screen if i drag my mause, light blue will overfloww to bottom. To eliminate it*/
+    height: 90px;/*it was 70 px*/
+}
+.heading-small{ /* 26 make heading a little bit bigger */
+    font-size: 1.5rem;
+}
+#navbar ul li a{/*27- Make list elements smaller*/
+    padding: 0.75rem;
+    font-size: small;
+ 
+ }
+
+ /*47- For mobile, the article elements will shown so close. Thats why i am writing the code below*/
+
+ #training .items{
+     flex-direction: column;/*it in column direction now*/
+
+ }
+ #training .items .items{
+     width: 100%;
+ }
+
+ /*54-The course infos looking bad in mobil version*/
+ .courses .course{
+     flex-direction: column;
+ }
