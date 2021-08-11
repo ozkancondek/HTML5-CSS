@@ -1,5 +1,5 @@
  
- /*9-i want to get 0 value for margin and padding*/
+ /*9-i want to get 0 value fo all elements margin and padding*/
  *{
      margin: 0;
      padding: 0;
@@ -15,10 +15,10 @@
  
  
  html{ /*8-Lets sycronize the font charesterictic first.*/
-     font-family:"Open Sans",sans-serif;
+     font-family:"Open Sans",sans-serif; /*Main font*/
  }
  /*Navbar*/
- #navbar{ /*18*/
+ #navbar{ /*18*/ 
      color: #fff;
      display: flex;
      justify-content: space-between; /*Without this, the elements in navbar  not be seperate*/
