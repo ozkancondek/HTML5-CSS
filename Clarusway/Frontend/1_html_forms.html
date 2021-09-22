@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.clarusway.com/action_page.php">
+        <h1>This is a form</h1>
+        <h4>username: <br></h4>
+        <input type="text" name = "username" >  <!--The text input element. In case the name attribute is omitted, the data of that input field will not be sent.-->
+    
+<!--The action attribute is required for every <form> element.
+     It is used to define the action to be performed when the form is submitted.-->
+    
+
+     <!--
+         The Method Attribute
+The method attribute is used to determine how to send form data to the server.
+
+There are two types of method to sent forms: GET and POST.
+
+The default value for the method attribute is GET method. If the method attribute is omitted, the form data will be sent using the GET method.
+
+With the GET method, the values from the form data will be visible in the page address field. So, GET method must not be used for sensitive data.
+
+If the form is short and not sensitive, it is ideal to use GET method.
+
+In case the form is very long and contains sensitive data (e.g. passwords), to use POST method is ideal.
+     -->
+
+     <!--Submit button-->
+     <input type="search" value="Look for">
+      
+     <input type="submit" value = "SEND">
+    </form>
+</body>
+</html>
