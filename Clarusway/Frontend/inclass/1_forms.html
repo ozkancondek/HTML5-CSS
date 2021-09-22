@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>1th Inclass-Forms and Elements</h1>
+    <form action="1_forms_result.html"> <!--where are the infos going:Read all input in this file-->
+
+        <div>
+            <label for="ad">name</label>
+            <input type="text" name="NAME" id="ad" placeholder="Enter your name" required> <!--text area-Without name its not possible to storage in backend-->
+             
+
+            <br><br><br>
+            <label for="soyad">surname</label>
+            <input type="text" name="SURNAME" id="soyad" placeholder="Enter your surname"> <!-- -->
+             
+           
+        </div> 
+        <div>
+            <br><br><br>
+            <label for="pp">Password:</label>
+            <input type="password" name="pass" id="pp" placeholder="Enter the password"><!--  you have to give an id-->
+
+
+        </div>
+        <div>
+            <br><br><br>
+            <label >Gender</label>
+            <br><br>
+            <label for="gender1">Male</label>
+            <input type="radio" name="gender" id="gender1" value="Male choosed" checked> <!--I choose only  one name for backend.-->
+            <label for="gender2">Female</label>
+            <input type="radio" name="gender" id="gender2" value="Female choosed" >
+            
+        </div>
+        <div>
+            <br><br><br>
+            <label for="">Favorite Animal</label>
+            <br><br>
+            <input type="checkbox" name="animal_1" id="panda" value="Panda choosed"> <!--If i give to all options the same name, its gonna be complex for backend side-->
+            <label for="panda">Panda</label>
+
+            <input type="checkbox" name="animal_2" id="fish" value="fish choosed"  >
+            <label for="fish">Fish</label>
+
+            <input type="checkbox" name="animal_3" id="unicorn" value="unicorn choosed" checked> <!--You can choose more than one checked option-->
+            <label for="unicorn">Unicorn</label>
+            
+        </div>
+        <div>
+            <br><br><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" step="5" max="40" min="18" placeholder="18-40" required> <!--increment ratio -- i am not assigning a valu because its gonna be direct send to value otherwise-->
+        </div>
+        
+        <div>
+            <br>
+            <label for="search">Search</label>
+            <input type="search" name="searched word" id="search" placeholder="search....">
+        </div>
+        <div>
+            <br>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="preffered color">
+        </div>
+        
+        <div >
+            <br><br>
+            <label for="date">Date</label> <br>
+            <input type="date" name="Entered date" id="date">
+        </div>
+        <div>
+            <br><br>
+            <label for="email">E-mail</label>
+            <input type="email" name="user email" id="email" required placeholder="example@example.com">
+        </div>
+        <div>
+            <br><br>
+            <label for="file">File</label> <br>
+            <input type="file" name="user file" id="file" multiple> <!--with multile option i can choose multiple files-->
+        </div>
+        <div>
+            <br><br>
+            <label for="phone">Mobil</label><br>
+            <input type="tel" name="user phone number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="XXX-XXX-XX-XX">
+        </div>
+        <div>   
+            <br><br><br>
+            <input type="reset" value="Clear All" required>
+        </div>
+        <br><br><br>
+        <input type="submit" value="Send Your Choice">
+
+    </form>
+</body>
+</html>
