@@ -1,0 +1,44 @@
+<!--Datalist and select -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="3_forms_result.html" method="GET" name="myform">
+    
+    
+        <div>
+            <label for="browser">Browsers:</label>
+            <input type="text" list="browsers" id="browser" name="options">
+            <datalist id="browsers">  <!-- if i write some aother finction to search box, it will stay as an option -->
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+                <option value="Edge">Edge</option>
+            </datalist>
+        </div>
+        <div>
+            <br><br>
+            <label for="cars">Choose a car : </label>
+            <br />
+            <select name="cars" id="cars" multiple size="3" required> <!-- user have to choose one option-->
+            <option value="Porche">Porche</option>
+            <option value="Masserati" selected>Masserati</option>
+            <option value="BMW">BMW</option>
+            <option value="Tesla">Tesla</option>
+            </select>
+        </div>
+        <br><br>
+        <input type="reset" value="Clear">
+        <br><br><br>
+        <input type="submit" value="SLECT">
+    
+    
+    </form>
+</body>
+</html>
