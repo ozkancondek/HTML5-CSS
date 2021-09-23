@@ -1,0 +1,38 @@
+#box1 {
+    color: blue;
+    border-style: solid; /* if i dont assign border color its gonna use content color automatically*/
+    border-width: 5px;
+    border-color: orange;
+
+}
+#box2 {
+    color: rgb(0, 0, 225);
+    border: 5px solid grey; /*shorthand usage*/
+    border-style: double;
+    border-radius: 10px;
+}
+#box3 {
+    color: #0000FF;
+    border-top: 10px dotted;
+    border-right: 5px solid;
+    border-bottom: 3px double;
+    border-left: 7px solid;
+    
+}
+#box4 {
+    color: rgb(0, 0, 225, 0.5);
+    border-style: solid;
+    border-width: 10px 20px; /* top-bottom, left-right*/
+    border-color: cyan orange;
+}
+#box5 {
+    color: hsl(240, 100%, 50%);
+    border-style: solid dotted double; /*top,left-right,bottom*/
+    border-color: orange    black yellow;
+
+}
+#box6 {
+    color: hsl(240, 100%, 50%, 0.3);
+    border: 5px solid black;
+    border-radius: 10px;
+}
