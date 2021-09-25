@@ -1,0 +1,33 @@
+.container{
+    background-color: grey;
+    width: 80%;
+    margin: auto;
+
+}
+
+
+.div1{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    color: white;
+    font-size: 50px;
+    border: 5px solid red;
+}
+
+.div2{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    font-size: 50px;
+    color: white;
+}
+
+.div3{
+    width: 150px;
+    height: 150px;
+    background-color: fuchsia;
+    font-size: 50px;
+    color: white;
+
+}
