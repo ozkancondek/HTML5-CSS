@@ -1,0 +1,37 @@
+ 
+
+
+div{
+    border: 2px solid;
+    /* margin: 100px; */
+    padding: 50px;
+}
+h2{
+    background-color: chocolate;
+    margin-bottom: 0px;
+    /*padding: 50px;*/
+}
+#p1{
+    background-color:cyan;
+    /* margin-top: 15px;
+    margin-left: 20px;margin-right: 45px; */
+    width: 250px;
+    height: 250px;
+    padding: 50px; /*borders of my box will increase*/
+    box-sizing: border-box; /* my border will stay stabil*/
+    overflow: scroll; /*the contand stay in scroll box*/
+    /* margin: auto; */
+    /* margin-bottom: 80px; */
+   
+   
+   /* padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left:45px ;*/
+}
+#p2{
+    /* margin-top: 20px; */
+    background-color: chartreuse;
+    /* margin: inherit; */
+    padding: inherit;
+}
