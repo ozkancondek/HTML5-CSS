@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#title {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+
+  font-size: 75px;
+  line-height: 1.2;
+}
+#description {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 120;
+}
+
+.labell {
+  font-size: 1.5rem;
+}
+
+#send-button {
+  border: none;
+}
