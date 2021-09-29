@@ -1,0 +1,36 @@
+div{
+    background-color: coral;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;  /*make them inline*/
+}
+#box1{
+    
+    /* visibility: hidden; */
+
+
+}
+
+#box2{
+    /* display: none;  */
+}
+
+
+a{
+    display: block;/* if i just use block, i cant modify width and height. But ican modify it for inline-block*/
+    /* width: 120px; thats not gonna work */
+
+}
+
+
+
+span{
+    display: inline-block;
+    background-color: cyan;
+    margin: 5px;
+    width: 100px;
+    height: 150px;
+}
