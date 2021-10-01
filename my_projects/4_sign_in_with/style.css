@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+#container {
+  margin: auto;
+  width: 50%;
+  height: 650px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 10px solid aliceblue;
+  border-image: linear-gradient(to right, #21bfe2, #9c55f3, #db1dfa) 30;
+}
+
+#title {
+  text-align: center;
+  padding-top: 60px;
+  color: rgb(58, 58, 58);
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+#apps {
+  text-align: center;
+  word-spacing: 10px;
+  margin-top: 15px;
+}
+
+#facebook {
+  width: 200px;
+  height: 60px;
+  background-color: #3b5998;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+#google {
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: rgb(8, 8, 8);
+  border: 1px solid rgba(95, 95, 95, 0.3);
+  border-radius: 10px;
+}
+
+#google img {
+  height: 20px;
+  margin: 1px;
+}
+
+.input-box {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(36, 36, 36);
+  margin-left: 115px;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: grey;
+}
+#username,
+#password {
+  width: 410px;
+  height: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: lightcyan;
+  margin-top: 10px;
+}
+#button {
+  width: 410px;
+  height: 50px;
+  margin-left: 115px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(29, 29, 29);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+#footer {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: grey;
+}

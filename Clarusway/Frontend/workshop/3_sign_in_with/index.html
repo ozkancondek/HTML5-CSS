@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in With</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <form action="result.html" target="_blank" method="GET">
+        <h1 id="title">Sign In With</h1>
+        <br />
+        <div id="apps">
+          <button type="submit" id="facebook">
+            <i class="fab fa-facebook-square"> </i>
+            Facebook
+          </button>
+          <button type="submit" id="google">
+            <img src="googleicon.png" alt="#" />
+            Google
+          </button>
+        </div>
+        <br />
+        <br />
+        <div class="input-box">
+          <label for="username"> Username</label> <br />
+          <input type="text" name="usernem" id="username" />
+        </div>
+        <br />
+        <div class="input-box">
+          <label for="password">
+            Password
+            <a href="index.html">Forgot</a> </label
+          ><br />
+          <input type="text" name="password" id="password" />
+        </div>
+        <br />
+        <div id="submit">
+          <button type="submit" id="button">Sign In</button>
+        </div>
+        <footer id="footer">
+          <p>
+            Not a member yet?
+            <a href="index.html">Sign up now!</a>
+          </p>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
