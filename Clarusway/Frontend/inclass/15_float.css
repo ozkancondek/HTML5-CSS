@@ -1,0 +1,40 @@
+*{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+header{
+    background-color: seagreen;
+    margin-bottom: 10px;
+}
+main{
+    background-color: skyblue;
+    padding: 5px;
+}
+aside{
+    background-color: darkorange;
+    width: 25%;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+}
+article{
+    background-color: greenyellow;
+    width: 70%;
+    height: 300px;
+     float: left;/* main will be empty and footer raise up. give main overflw or height  */ 
+}
+footer{
+    background-color: coral;
+}
+
+#clear{
+    clear: both;
+    border: none;
+}
+
+/* #clearfix{ this method also wor in css side
+    content: "";
+    clear: both;
+    display: block;
+} */
