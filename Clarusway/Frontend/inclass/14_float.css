@@ -1,0 +1,17 @@
+#container{
+    background-color: burlywood;
+    border: 2px solid rebeccapurple;
+}
+
+img{
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+
+p{
+   
+    text-align: justify;
+    clear: left; /* cancel float on left side*/
+}
