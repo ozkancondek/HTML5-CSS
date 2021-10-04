@@ -1,0 +1,22 @@
+a:link{
+    color: rgb(0, 255, 0);
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: aqua;
+}
+
+a:active{
+    color: blue;
+}
+
+a::selection{
+    background-color: gray;
+    color: white;
+    text-shadow: 1px 1px 1px;
+     
+}
