@@ -1,0 +1,30 @@
+
+
+/* p {
+    background-color: gray;
+} => call all paragraphs*/
+
+
+/* div p {  =>  all p s under div
+    background-color: gray;
+} */
+
+
+/* div > p{  => only the child elements 
+    background-color: aqua;
+} */
+
+
+/* div + p{  => first p after div
+    background-color: grey;
+} */
+
+/* div ~ p{  => all p s after div
+    background-color: gray;
+} */
+
+/* div ~ p,div ~ h2{ => h2 and p comes after from div
+    background-color: aqua;
+}
+ */
+ 
