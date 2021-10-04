@@ -1,0 +1,20 @@
+.outline{
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+    background-color: aqua;
+    border: 2px solid black;
+     
+    
+     
+}
+
+h1{
+    padding-left: 5px;
+    position: relative;
+    left: 10px;
+    width: 50%;
+    border: 1px solid black;
+    outline: 3px solid red;
+
+}
