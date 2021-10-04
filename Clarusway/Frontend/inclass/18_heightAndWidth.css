@@ -1,0 +1,65 @@
+
+
+body{
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+
+#main-content{
+    background-color:cyan; /*default height is auto*/
+    width: 500px;
+    height: 600px;
+    margin: 0 auto; /* come to middle*/
+    padding: 2%;
+
+}
+
+.auto-width{
+    width: auto;
+    height: auto;
+    background-color: pink;
+    margin-bottom: 10px;
+}
+
+.length-width{
+    width: 50px;
+    height: 50px; /*its gonna be narrover*/
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.percentage-width{
+    width: 70%;
+    height: 10%;
+    background-color: greenyellow;
+    margin-bottom: 10px;
+}
+.initial-width{
+    width: initial; /* it takes auto (default) values */
+    height: initial;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+
+/* .inherit-width{
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    background-color: rgb(204, 142, 67); /* takes from main-content div 
+} */
+
+
+.max-width{
+    margin-top: 10px;
+    max-width:400px ;
+    max-height: 200px;
+    background-color: yellow;
+}
+.min-width{
+    margin-top: 10px;
+    min-width: 100px;
+    min-height: 100px;
+     
+    background-color: rgb(177, 177, 86);
+}
