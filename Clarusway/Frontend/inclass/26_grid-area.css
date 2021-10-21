@@ -1,0 +1,48 @@
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas: 
+    "logo header header"
+    "sidebar main section"
+    "footer footer footer";
+    grid-gap: 10px;
+}
+
+
+.content{
+    background-color: gray;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.content1{
+    grid-area: header;
+    background-color: green;
+}
+
+.content5{
+    grid-area: footer;
+    background-color: rgb(135, 204, 135);
+}
+
+.content2{
+    grid-area: sidebar;
+    background-color: #73dbf5;
+}
+
+.content3{
+    grid-area: main;
+    background-color: #c2ccce;
+}
+
+.content4{
+    grid-area: section;
+    background-color: #9eca6c;
+}
