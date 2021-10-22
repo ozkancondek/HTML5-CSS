@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+     
+}
+
+.inner{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 45px;
+     
+
+}
+main{
+    
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    
+    text-decoration:none solid rgb(79, 79, 79);
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none solid rgb(51, 51, 51);
+    margin-left: 5px;
+}
+input{
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none solid rgb(130, 130, 130);
+    height: 30px;
+    width: 100%;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    padding-left: 35px;
+    margin-top: 10px;
+    
+      
+
+}
+.input{
+    position: relative;
+    padding: 5px;
+    display: block;
+    
+    
+}
+
+ .contact i{
+    position: absolute;
+    font-size: 16px;
+    left: 10px;
+    padding-top: 15px;
+    
+     
+    
+     
+     
+    
+}
+.country{
+     
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.shipping i {
+    position: absolute;
+    font-size: 16px;
+    left: 10px;
+    padding-top: 15px;
+    
+
+}
+
+.postcode input{
+     
+    width: 345px;
+    
+}
+
+#country{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: right;
+    height: 30px;
+    width: 119px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.country-postcode{
+    display: flex;
+    position: relative;
+     
+}
+
+ 
+.country i {
+    font-size: 16px;
+    text-decoration: none solid rgb(130, 130, 130);
+    height: 16px;
+    width: 15px;
+     position: absolute;
+     top: 30px;
+     left: 10px;
+      
+}
+  .postcode i {
+    font-size: 16px;
+    text-decoration: none solid rgb(130, 130, 130);
+    height: 16px;
+    width: 15px;
+     position: absolute;
+     top: 30px;
+     left: 135px;
+      
+}
+.checkbox input{
+     font-family: Arial;
+     font-size: 13px;
+     text-decoration: none solid rgb(0, 0, 0);
+     height: 12.6px;
+     width: 12.6px;
+     outline: rgb(255, 0, 0);
+    margin-left: 5px;
+}
+
+#button{
+    font-family: Arial;
+    color: white;
+    font-size: 13.3px;
+    font-weight: 600;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    background-color: #F2994A;
+    height: 43px;
+    width: 90px;
+    padding: 14px 0 14px 0;
+     
+    border: rgb(255, 0, 0) dashed 1px;;
+    margin-left:  390px;
+    border-radius: 10px;
+
+}
+
+aside{
+     
+    background-color:  rgb(238, 238, 238,0.3);
+    height:400px;
+    border-radius: 10px;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.product{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+     height: 110px;
+     width: 96px;
+     border: none;
+     border-radius: 10px;
+     
+}
+
+
+.describe h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none solid rgb(78, 81, 80);
+   height: 19px;
+   width: 204px;
+   margin-left: 15px;
+}
+
+.describe{
+    display: flex;
+    flex-direction: column;
+}
+.amount{
+    height: 45px;
+    width: 120px;
+    border: 1px solid #888888;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+    margin-top:40px ;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.amount i{
+    height: 25px;
+    width: 20px;
+     padding-top: 4px;
+     padding-left: 4px;
+    background-color:  #E0E0E0;
+    border-radius: 5px;
+     
+}
+h3{
+    width: 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border-top: 1px dotted #888888;
+     
+}
+.total{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 370px;
+    margin-top: 40px;
+
+
+
+}
+
+.price{
+   color: #F2994A;
+}
+span{
+    color: #4E5150;
+    font-size: 12px;
+    text-decoration: line-through solid rgb(78, 81, 80)
+}
