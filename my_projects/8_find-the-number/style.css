@@ -5,3 +5,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(image.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    border: none;
+    border-radius: 40px;
+    width: 400px;
+    height:600px ;
+    background-color: rgb(166, 105, 223, 0.6);
+    margin-top: 30px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.input{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    
+}
+#content{
+    width: 50%;
+     
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(77, 77, 77);
+    flex-direction: column;
+     
+}
+button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(199, 199, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 77, 77);
+}
+ 
+
+input{
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(199, 199, 199);
+}
+
+input:hover , button:hover{
+    background-color: rgb(155, 155, 155);
+    border-color: blue;
+}
+#header{
+    font-size: 2rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+}
+
+p{
+    font-size: 1.5rem;
+}
