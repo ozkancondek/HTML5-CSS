@@ -70,17 +70,14 @@ body {
 }
 
 #alert {
-  
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   padding-top: 5px;
-   margin-top: 5px;
+  margin-top: 5px;
   color: #494949;
 }
- 
-
 
 #search-todo {
   display: flex;
@@ -120,6 +117,7 @@ body {
   justify-content: center;
   width: 95%;
   padding: 10px;
+  overflow: scroll;
 }
 
 #clear {
@@ -148,17 +146,12 @@ body {
   list-style-type: none;
   width: 500px;
   height: 30px;
-   margin-top: 5px;
+  margin-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1,2rem;
+  font-size: 1, 2rem;
   padding: 10px;
   background-color: #8db4fd;
   border-radius: 10px;
-   
 }
-
- 
- 
- 

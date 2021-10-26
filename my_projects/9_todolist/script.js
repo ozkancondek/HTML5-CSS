@@ -1,36 +1,37 @@
- 
+
 //Getting Elements
 
 
-const addInput =document.getElementById("add-input");
+const addInput = document.getElementById("add-input");
 
-const addButton =document.getElementById("add-button");
+const addButton = document.getElementById("add-button");
 
-const alertDiv =document.getElementById("alert");
+const alertDiv = document.getElementById("alert");
 
-const searchTodo =document.getElementById("search-todo");
+const searchTodo = document.getElementById("search-todo");
 
-const searchButton =document.getElementById("search-button");
+const searchButton = document.getElementById("search-button");
 
 const listTodo = document.getElementById("list-todo")
 
-const listGroup =document.getElementById("list-group");
+const listGroup = document.getElementById("list-group");
 
-const clearButton =document.getElementById("clear-button");
+const clearButton = document.getElementById("clear-button");
 
 
- 
+
 
 
 
 eventListeners();
 
-function eventListeners(){ // defines all event listener functions
-    addButton.addEventListener("click",addTodo);
+function eventListeners() { // defines all event listener functions
+    addButton.addEventListener("click", addTodo);
     document.addEventListener("DOMContentLoaded", loadTodos);
     listTodo.addEventListener("click", deleteTodo);
     listTodo.addEventListener("click", completed);
-    searchTodo.addEventListener("keyup",filterTodos);
+    searchTodo.addEventListener("keyup", filterTodos);
+    clearButton.addEventListener("click", clearAllTodos);
 
 
 
@@ -38,83 +39,100 @@ function eventListeners(){ // defines all event listener functions
 };
 
 
-function filterTodos(e){
+function clearAllTodos() {
+    if (confirm("Are you sure you want to delete all todos?")) {
+        // listGroup.innerHTML = "";
+
+        while (listGroup.firstElementChild != null) {
+
+            listGroup.removeChild(listGroup.firstElementChild);
+
+        }
+        localStorage.removeItem("todos");
+
+    }
+
+}
+
+
+
+function filterTodos(e) {
 
     const filterValue = e.target.value.toLowerCase();
     const lis = document.querySelectorAll(".list-element");
     lis.forEach(items => {
         const text = items.textContent.toLowerCase();
-        if(text.indexOf(filterValue) === -1){
+        if (text.indexOf(filterValue) === -1) {
             items.setAttribute("style", "display:none")
         }
-        else{
+        else {
             items.setAttribute("style", "display: flex")
         }
     });
-     
-     
+
+
 }
 
 
-function completed(e){
+function completed(e) {
 
-    if (e.target.className === "far fa-check-circle"){
+    if (e.target.className === "far fa-check-circle") {
         e.target.parentElement.parentElement.style.textDecoration = "line-through"
-            /////add code to click again
+        /////add code to click again
     }
 }
 
-function deleteTodo(e){
+function deleteTodo(e) {
 
-    if(e.target.className === "fa fa-remove"){
+    if (e.target.className === "fa fa-remove") {
         e.target.parentElement.parentElement.remove();
         deleteTodosFromStorage(e.target.parentElement.parentElement.textContent);
     }
 }
 
-function deleteTodosFromStorage(a){
+function deleteTodosFromStorage(a) {
     let todos = getTodosFromStorage();
-    todos.forEach(function(b,index){
-        if(b === a){
-            todos.splice(index,1);
+    todos.forEach(function (b, index) {
+        if (b === a) {
+            todos.splice(index, 1);
         }
     })
-    localStorage.setItem("todos",JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-function loadTodos(){
+function loadTodos() {
     let todos = getTodosFromStorage();
     todos.forEach(x => {
         addTodoToList(x);
-        
+
     });
 }
 
-function addTodo(e){ 
+function addTodo(e) {
     const newTodo = addInput.value.trim();
 
-    if (newTodo ===""){
+    if (newTodo === "") {
         showalert(1);
-    }else{
+    } else {
         addTodoToList(newTodo); // add new todo to list function
         addTodoToStorage(newTodo);
         showalert(2);
     }
-    
-    
 
 
-    e.preventDefault( );
+
+
+    e.preventDefault();
 }
 
 
-function getTodosFromStorage(){ // get todos from storage
+function getTodosFromStorage() { // get todos from storage
     let todos;
-    if(localStorage.getItem("todos") === null){ // check if i have a list in local storage like  todos.
+    if (localStorage.getItem("todos") === null) { // check if i have a list in local storage like  todos.
         todos = [];
     }
-    else{
-       todos = JSON.parse(localStorage.getItem("todos")); // return it to array
+    else {
+        todos = JSON.parse(localStorage.getItem("todos")); // return it to array
     }
     return todos;
 
@@ -122,43 +140,43 @@ function getTodosFromStorage(){ // get todos from storage
 }
 
 
-function addTodoToStorage(newTodo){ // add todos to storage
+function addTodoToStorage(newTodo) { // add todos to storage
 
     let todos = getTodosFromStorage();
     todos.push(newTodo);
-    localStorage.setItem("todos",JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
 
 
 }
 
 
-function showalert(a){ // is todo added successfully?
-    
-    if (a == 1){
-        alertDiv.style.backgroundColor ="#ff8f8f"
-        alertDiv.innerText ="Please enter a todo..."
-        setTimeout(function(){
-            alertDiv.style.backgroundColor ="white"
-            alertDiv.innerText =""
-        },2000)
+function showalert(a) { // is todo added successfully?
 
-    }else{
-        alertDiv.style.backgroundColor ="#64bcf7"
-        alertDiv.innerText ="Todo added successfully..."
-        setTimeout(function(){
-            alertDiv.style.backgroundColor ="white"
-            alertDiv.innerText =""
-        },2000)
+    if (a == 1) {
+        alertDiv.style.backgroundColor = "#ff8f8f"
+        alertDiv.innerText = "Please enter a todo..."
+        setTimeout(function () {
+            alertDiv.style.backgroundColor = "white"
+            alertDiv.innerText = ""
+        }, 2000)
+
+    } else {
+        alertDiv.style.backgroundColor = "#64bcf7"
+        alertDiv.innerText = "Todo added successfully..."
+        setTimeout(function () {
+            alertDiv.style.backgroundColor = "white"
+            alertDiv.innerText = ""
+        }, 2000)
 
     }
 
 }
 
-function addTodoToList(newTodo){ // take string value and add as a list item to list
+function addTodoToList(newTodo) { // take string value and add as a list item to list
     //create li element
     const listItem = document.createElement("li");
-    listItem.className ="list-element";
-    listItem.style.listStyleType ="none";
+    listItem.className = "list-element";
+    listItem.style.listStyleType = "none";
 
     const linkMark = document.createElement("a"); //create a cancel icon in link
     linkMark.href = "#";
@@ -180,7 +198,7 @@ function addTodoToList(newTodo){ // take string value and add as a list item to 
     listGroup.appendChild(listItem)
 
     addInput.value = ""
-    
+
 
 
 
