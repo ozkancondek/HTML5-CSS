@@ -12,7 +12,7 @@ const img = document.getElementById("img");
 const counter = document.getElementById("counter")
 const description = document.getElementById("description")
 
-//timer function
+//attempt counter function
 
 let c = 0;
 
@@ -23,14 +23,14 @@ count = () => c++;
 
 button.onclick = function () {
 
-
+     
     let value = input.value;
     let real = 17;
     count();
 
     if (real < value) {
         fourth.innerHTML = "Your guess is bigger!"
-        third.innerHTML += value
+        third.innerHTML += value+"-"
 
     } else if (real > value) {
         fourth.innerHTML = "Your guess is smaller!"
@@ -45,7 +45,7 @@ button.onclick = function () {
     }
 
 
-
+     
 
 
 
@@ -57,11 +57,11 @@ counter.addEventListener("click", func)
 function func() {
     description.style.display = "none";
     let timer = setInterval(myTimer, 1000)
-    let a = 0;
+    let a = 11;
     function myTimer() {
-        a++
+        a--
         counter.innerHTML = a;
-        if (a == 5) {
+        if (a == 0 ) {
             clearInterval(timer)
 
             counter.innerHTML = "Again";

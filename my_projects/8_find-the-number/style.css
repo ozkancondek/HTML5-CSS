@@ -22,7 +22,7 @@ body{
     border-radius: 40px;
     width: 400px;
     height:600px ;
-    background-color: rgb(166, 105, 223);
+    background-color: rgb(166, 105, 223,0.9);
     border: 2px solid rgb(144, 144, 173);
     display: grid;
     grid-template-columns: 1fr;
