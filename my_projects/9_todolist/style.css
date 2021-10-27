@@ -118,6 +118,7 @@ body {
   width: 95%;
   padding: 10px;
   overflow: scroll;
+   
 }
 
 #clear {
@@ -147,6 +148,7 @@ body {
   width: 500px;
   height: 30px;
   margin-top: 5px;
+   
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,4 +156,7 @@ body {
   padding: 10px;
   background-color: #8db4fd;
   border-radius: 10px;
+}
+#list-group{
+  padding-left: 0;
 }

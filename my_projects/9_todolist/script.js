@@ -73,11 +73,15 @@ function filterTodos(e) {
 
 }
 
-
+let a = 0;
 function completed(e) {
+    
+    a++;
 
     if (e.target.className === "far fa-check-circle") {
-        e.target.parentElement.parentElement.style.textDecoration = "line-through"
+        if(a%2==1){e.target.parentElement.parentElement.style.textDecoration = "line-through"}
+        else{ e.target.parentElement.parentElement.style.textDecoration = "none"}
+       
         /////add code to click again
     }
 }
@@ -177,6 +181,7 @@ function addTodoToList(newTodo) { // take string value and add as a list item to
     const listItem = document.createElement("li");
     listItem.className = "list-element";
     listItem.style.listStyleType = "none";
+     
 
     const linkMark = document.createElement("a"); //create a cancel icon in link
     linkMark.href = "#";
