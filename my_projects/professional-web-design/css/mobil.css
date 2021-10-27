@@ -1,0 +1,20 @@
+@media screen and (max-width:480px){
+
+    .navbar{
+       flex-direction: column;
+        
+       align-items: center;
+       justify-content: center;
+}
+
+.courses{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+
+}
+
+}

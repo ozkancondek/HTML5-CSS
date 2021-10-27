@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+.navbar{
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(81, 101, 114);
+    border-bottom: 4px solid rgb(185, 94, 154);
+}
+
+.header{
+    color: white;
+
+}
+span{
+    color: rgb(185, 94, 154);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+
+    
+}
+li{
+    padding: 10px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     
+   background-color: aqua;
+      
+     background-size:cover;
+     
+      
+}
+
+.content{
+    text-align: center;
+     
+     
+     
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+
+ }   
+    
+  .content  {
+      padding-top:30px ;
+      height: 300px;
+      display: flex;
+      align-items: center;
+
+
+    }
+    .content p{
+        margin-top: 5px;
+    }
+     
+    
+    
+     
+
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px 10px 10px 10px;
+    background-color: rgb(81, 101, 114);
+    height: 60px;
+    padding-top: 15px;
+    
+}
+.email{
+    display: flex;
+    flex-direction: row;
+     
+    
+     
+    
+}
+.email input{
+    height:  30px;
+    width: 200px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.email button{
+    height: 30px;
+    width: 80px
+     
+}
+
+.courses{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.course1,
+.course2,
+.course3{
+    text-align: center;
+    width: 33%;
+   
+}
+
+
+.footer{
+    background-color:rgb(81, 101, 114); 
+    padding: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer img{
+    width: 200px;
+    height: 40px;
+}
+
+.content2{
+    height: 450px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 0.9rem;
+
+}
+
+.description1--about p{
+    margin-top: 10px;
+     
+}
+.description1--text{
+    background-color:rgb(81, 101, 114); 
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.description2{
+    margin-left: 50px;
+    height: 150px;
+    background-color:rgb(81, 101, 114); 
+    color: white;
+    padding: 20px 10px
+    
+}
+.description2 p{
+    margin-top: 10px;
+}
+
+.content3{
+    color: black;
+     
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+    
+}
+.left{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    width: 600px;
+}
+.maintenance,
+.design,
+.hosting{
+    background-color: rgb(241, 241, 241);
+    margin-top: 5px;
+    height: 120px;
+    padding: 10px;
+}
+
+.right{
+    margin-left: 10px;
+    background-color:rgb(81, 101, 114); 
+    color: white;
+    height: 270px;
+    padding: 10px;
+    width: 400px
+    
+     
+
+}
+
+.form{
+
+    margin-top: 10px;
+}
+.right input{
+     margin-top: 5px;
+     width: 85%;
+     height: 30px;
+}
+#text{
+     
+    height: 50px;
+}
+.form button{
+    margin-top: 5px;
+    width: 20%;
+    height: 25px;
+    border: none;
+}
