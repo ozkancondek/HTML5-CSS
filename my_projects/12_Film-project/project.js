@@ -10,7 +10,7 @@ const titleElement = document.querySelector("#title");
 const directorElement = document.querySelector("#director");
 const urlElement = document.querySelector("#url");
 
-
+const cardbody = document.querySelectorAll(".card-body")[1];
 // start UI object
 
 const ui = new UI();
@@ -32,6 +32,9 @@ function eventListeners(){
         ui.loadAllFilms(films);
 
     })
+
+    cardbody.addEventListener("click",deleteFilm);
+
 
 }
 
@@ -62,4 +65,22 @@ function addFilm(e){
     ui.clearInputs(titleElement,urlElement,directorElement);
 
     e.preventDefault();
+}
+
+
+//delete film function
+
+function deleteFilm(e){
+
+    if(e.target.id === "delete-film"){
+        ui.deleteFilmFromUI(e.target);
+        /*<td><img src="" class="img-fluid img-thumbnail"></td>
+          <td></td>
+          <td></td>                                  
+          <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td> */      
+          storage.deleteFilmFromStorage(e.target.parentElement.previousElementSibling.previousElementSibling.textContent)                       
+          ui.displayMessage("Film deleted","success")             
+    }
+
+
 }

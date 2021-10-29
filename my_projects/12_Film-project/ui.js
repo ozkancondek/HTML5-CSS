@@ -30,7 +30,7 @@ UI.prototype.addFilmToUI = function(newFilm){
 
 
 // delete previous input value from input areas
-
+ 
 UI.prototype.clearInputs = function(element1,element2,element3){
     element1.value = "";
     element2.value = "";
@@ -78,3 +78,8 @@ UI.prototype.loadAllFilms = function(films){
     </tr>`;
     });
 };
+
+
+UI.prototype.deleteFilmFromUI = function(element){
+    element.parentElement.parentElement.remove();
+}
