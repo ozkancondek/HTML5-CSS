@@ -11,6 +11,8 @@ const directorElement = document.querySelector("#director");
 const urlElement = document.querySelector("#url");
 
 const cardbody = document.querySelectorAll(".card-body")[1];
+
+const clear = document.getElementById("clear-films");
 // start UI object
 
 const ui = new UI();
@@ -34,6 +36,7 @@ function eventListeners(){
     })
 
     cardbody.addEventListener("click",deleteFilm);
+    clear.addEventListener("click",clearAllFilms);
 
 
 }
@@ -84,3 +87,17 @@ function deleteFilm(e){
 
 
 }
+
+//clear all films
+
+function clearAllFilms(){
+
+    if(confirm("Are you sure the delete all films from list?")){
+        ui.clearAllFilmsFromUI();
+        storage.clearAllFilmsFromStorage();
+
+
+    }
+
+}
+     
