@@ -1,0 +1,90 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("image.jpg");
+    background-size: cover;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+#container{
+    
+    margin-top: 50px;
+    height: 70vh;
+    width: auto;
+    padding: 20px;
+     
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(68, 94, 58, 0.6);
+    color: white;
+
+
+}
+div{
+    height: 20%;
+     
+     
+   
+}
+
+#header{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+     
+     
+}
+#header i{
+    font-size: 2.5rem;
+    color: black;
+     
+}
+#header p{
+    color: rgb(255, 255, 255);
+    font-weight: bolder; 
+     
+}
+span{
+    color: rgb(0, 218, 65);
+     
+}
+#dot{
+    color: rgb(65, 65, 65);
+     
+}
+
+#screen{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size:4rem;
+
+}
+
+#icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3rem;
+
+}
+
+
+table{
+    width: 100%;
+}
+
+th{
+    border-bottom: 2px solid;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+ 
