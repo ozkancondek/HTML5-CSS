@@ -17,12 +17,21 @@ const tbody = document.getElementById("tbl").children[1]
 
 
  
-    play.addEventListener("click",func1);
+    
     flag.addEventListener("click",func2);
-    redo.addEventListener("click",func3);
+      redo.addEventListener("click",func3);
  
-    let [a,a1,b,b1,c,c1] = [0,0,0,0,0,0];
-    let inc = setInterval(() => {
+
+
+
+
+
+    var xcv = setInterval(timer, 1000);
+    
+    var [a,a1,b,b1,c,c1] = [0,0,0,0,0,0];
+    
+     
+    function timer() {
         
         c1++;
         if (c1 > 9) {
@@ -46,32 +55,31 @@ const tbody = document.getElementById("tbl").children[1]
             a1 = 0;
         }
         
-     
-        const arrScreen = [a, a1, ":", b, b1, ":", c, c1].join("");
+       
+        var arrScreen = [a, a1, ":", b, b1, ":", c, c1].join("");
         screen.innerHTML = arrScreen;
+         
+       
         
         
-    }, 1000);
+    }
      
  
 
 
 
+ function func1(){
+    xcv();
+}
 
-
-function func1(){
-
-    
-};
+ 
 
 function func2(){
 
 };
 
 function func3(){
-      
-func1 = true
-
+   clearInterval(xcv);
 };
 
 
