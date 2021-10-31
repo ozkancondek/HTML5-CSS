@@ -26,6 +26,9 @@ function startFunc(){
 function stopFunc(){
     clearInterval(interval);
     [a, a1, b, b1, c, c1] = [0, 0, 0, 0, 0, 0];
+    setTimeout(function(){
+        screen.innerHTML = "00:00:00"
+    },1000)
 }
 
 function flagFunc(){

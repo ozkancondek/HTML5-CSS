@@ -4,7 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url("image.jpg");
-    background-size: cover;
+    background-size: 100% 130%;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -98,3 +98,33 @@ td{
     background-color: rgb(105, 105, 105);
     height: auto;
 }
+
+@media  screen and (max-width: 500px) {
+
+body{
+    background-size:cover;
+     
+    background-position: center;
+     
+}
+
+
+
+
+
+}
+
+@media  screen and (max-width: 768px) {
+
+    body{
+        background-size:cover;
+         
+        background-position: center;
+         
+    }
+    
+    
+    
+    
+    
+    }
