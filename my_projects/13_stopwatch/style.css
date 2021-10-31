@@ -12,10 +12,10 @@ body{
 #container{
     
     margin-top: 50px;
-    height: 70vh;
+    height: 80vh;
     width: auto;
     padding: 20px;
-     
+     border-radius: 5px;
     display: flex;
     flex-direction: column;
     background-color: rgba(68, 94, 58, 0.6);
@@ -88,3 +88,13 @@ td{
     text-align: center;
 }
  
+.fas:hover{
+    
+    transform: translateY(-7px);
+}
+ 
+
+#table{
+    background-color: rgb(105, 105, 105);
+    height: auto;
+}
