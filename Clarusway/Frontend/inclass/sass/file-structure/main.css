@@ -1,0 +1,61 @@
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.button, .button-warning, .button-success, .button-error {
+  float: left;
+  padding: 5px, 10px;
+  margin: 5px;
+  color: #67a832;
+}
+
+.button-error {
+  background-color: red;
+}
+
+.button-success {
+  background-color: red;
+}
+
+.button-warning {
+  background-color: orange;
+}
+
+footer {
+  float: left;
+  background-color: #b51658;
+}
+
+header {
+  float: left;
+}
+
+#contact {
+  float: left;
+  background-color: #000;
+}
+
+#home {
+  float: left;
+}
+
+#dark {
+  float: left;
+  background-color: #b51658;
+}/*# sourceMappingURL=main.css.map */

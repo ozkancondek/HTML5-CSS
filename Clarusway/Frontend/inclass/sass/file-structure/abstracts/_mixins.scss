@@ -1,0 +1,11 @@
+// Boyut verme
+
+@mixin boyut($g : null, $y : null) {
+    width: $g;
+    height: $y;
+}
+
+@mixin renk($a, $y){
+    background-color: $a;
+    color: $y;
+}
