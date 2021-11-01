@@ -1,0 +1,108 @@
+/*  *{
+     margin:0px;
+ };
+
+ $containercolor:rgb(58, 209, 58);
+ $bodycolor: rgb(110, 110, 255);
+ $textcolor:rgb(255, 255, 255);
+ $btncolor:rgb(173, 111, 111);
+
+ body{
+     background-color: $bodycolor;
+ };
+
+ nav{
+    margin-top: 15px;
+
+    background-color: darkorange
+ };
+
+
+ .left{
+     float:left;
+     list-style-type: none;
+     li {
+        display: inline-block
+        
+    };
+ };
+ 
+
+.right{
+    float:right;
+};
+
+.cw, .linkedin{
+    padding: 15px;
+    color:$textcolor;
+    background-color: grey;
+    border-radius: 15px;
+};
+
+
+.cw, .linkedin{
+    &:link{
+        background-color: $btncolor;
+    };
+    &:hover{
+        background-color: $btncolor;
+    }
+};
+  */
+
+
+
+  /*mapkeys*/
+  $thema : (
+      "light":#fff,
+      "dark":#000,
+      "grey":#aaa,
+  );
+
+  $weight : (
+    "l":300,
+    "n":400,
+    "b":500,
+  );
+       
+
+  
+
+  body{
+      background-color: map-get($thema , "grey");
+  }
+
+  p{
+      font-weight: map-get($weight, "n" );
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  div{
+    background-color: $primarycolor;
+    p{
+        color: $textcolor;
+    };
+ }; */
+
+ 
