@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin box ($color){
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: $color;
+    margin: 15px;
+
+
+
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    margin: 15px;
+}
+
+
+#first{
+    @include box (gray);
+};
+
+#second{
+    @include box (red);
+};
+
+
+#third{
+    float: left;
+    @extend .box2
+};
+
+
+
+
+
+
+@mixin condition($city) {
+
+    @if ($city == "barcelona") {
+        background-color: blue;
+        color: wheat;
+        
+    }
+    @else if ($city == "berlin") {
+        background-color: rgb(51, 255, 0);
+        color: rgb(255, 255, 255);
+        
+    }
+    @else if ($city == "honkong") {
+        background-color: rgb(20, 100, 0);
+        color: rgb(255, 0, 0);
+        
+    }
+    @else   {
+        background-color: rgb(163, 163, 163);
+        color: rgb(0, 0, 0);
+        
+    }
+    
+}
+
+
+
+/* .loops{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding: 10px 15px;
+    @include condition("honkodwadng");
+};
+
+
+$arr:1,2,3,4;
+
+$arr2:(
+    1:100,
+    2:200,
+    3:300,
+    4:400
+);
+
+@each $element in $arr {
+    .i-#{element} {
+        font-size: 10 + $element + px;
+    }
+}
+
+@each $x,$y in $arr2 {
+    .j-#{x} {
+        width: $y+px;
+    }
+}
+ */
+
+
+/*for loop*/
+
+
+ @for $i from 1 through 5{
+
+    .ozkan#{$i}{
+        width: $i*100 + px;
+    }
+
+} 
+
+
+/*while loop*/
+
+
+
+$number:1;
+
+@while($number <= 5){
+    .j-#{$number}{
+        width: $number*100+rem;
+    }
+
+    $number : $number +1;
+
+} 
+
+
+
+
+
+ 
