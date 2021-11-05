@@ -54,15 +54,17 @@ function colorPick() {
 
 function func1() {
     if (x == 1) {
-        background.style.backgroundColor = `${colorProducer()}`;
-        span.style.color = `${colorProducer()}`;
-        span.innerText = ` ${colorProducer()}`
+        let out = colorProducer();
+        background.style.backgroundColor = `${out}`;
+        span.style.color = `${out}`;
+        span.innerText = ` ${out}`
 
 
     } else {
-        background.style.backgroundColor = `${colorPick()}`;
-        span.style.color = `${colorPick()}`;
-        span.innerText = ` ${colorPick()}`
+        let out1 =colorPick();
+        background.style.backgroundColor = `${out1}`;
+        span.style.color = `${out1}`;
+        span.innerText = ` ${out1}`
 
 
     }
