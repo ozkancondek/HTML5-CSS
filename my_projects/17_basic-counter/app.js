@@ -16,7 +16,7 @@ const green = document.getElementById("half2")
 let c = 0;
 
 
-
+//event functions
  function func1(){
      c--;
      color();
@@ -39,6 +39,10 @@ function func2(){
     screen.innerText = 0;
      
 }
+
+
+//algorithm functions
+
 
 function color(){
     c > 0 ?  screen.style.color = "green" 
