@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+      }
+
+      @keyframes example {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+      .div2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example2;
+        animation-duration: 4s;
+      }
+      @keyframes example2 {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+      .div3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example3;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        /* animation-delay: -2s; */
+        animation-iteration-count: 3;
+        /*  animation-iteration-count: infinite; */
+      }
+
+      @keyframes example3 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      #div1,
+      #div2,
+      #div3,
+      #div4,
+      #div5 {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+      }
+      #div1 {
+        animation-timing-function: linear;
+      }
+      #div2 {
+        animation-timing-function: ease;
+      }
+      #div3 {
+        animation-timing-function: ease-in;
+      }
+      #div4 {
+        animation-timing-function: ease-out;
+      }
+      #div5 {
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes mymove {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+
+      .coin {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgb(21, 255, 0);
+        animation: animate 1s linear infinite;
+        perspective: 800px;
+      }
+      @keyframes animate {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+
+    <div class="div"></div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+
+    <div class="div2"></div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+
+    <div class="div3"></div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+
+    <p>
+      The animation-timing-function property specifies the speed curve of the
+      animation. The following example shows some of the different speed curves
+      that can be used:
+    </p>
+
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+
+    <div class="coin"></div>
+  </body>
+</html>
