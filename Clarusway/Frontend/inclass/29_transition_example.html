@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition</title>
+    <link rel="stylesheet" href="29_transition_example.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content content1"></div>
+      <div class="content content2"></div>
+      <div class="content content3"></div>
+      <div class="content content4"></div>
+      <div class="content content5"></div>
+      <div class="content content6"></div>
+      <div class="content content7"></div>
+      <div class="content content8"></div>
+      <div class="content content9"></div>
+      <div class="content content10"></div>
+      <div class="content content11"></div>
+      <div class="content content12"></div>
+      <div class="content content13"></div>
+      <div class="content content14"></div>
+      <div class="content content15"></div>
+      <div class="content content16"></div>
+      <div class="content content17"></div>
+      <div class="content content18"></div>
+      <div class="content content19"></div>
+      <div class="content content20"></div>
+      <div class="content content21"></div>
+      <div class="content content22"></div>
+      <div class="content content23"></div>
+      <div class="content content24"></div>
+      <div class="content content25"></div>
+      <div class="content content1"></div>
+      <div class="content content2"></div>
+      <div class="content content3"></div>
+      <div class="content content4"></div>
+      <div class="content content5"></div>
+      <div class="content content6"></div>
+      <div class="content content7"></div>
+      <div class="content content8"></div>
+      <div class="content content9"></div>
+      <div class="content content10"></div>
+      <div class="content content11"></div>
+      <div class="content content12"></div>
+      <div class="content content13"></div>
+      <div class="content content14"></div>
+      <div class="content content15"></div>
+      <div class="content content16"></div>
+      <div class="content content17"></div>
+      <div class="content content18"></div>
+      <div class="content content19"></div>
+      <div class="content content20"></div>
+      <div class="content content21"></div>
+      <div class="content content22"></div>
+      <div class="content content23"></div>
+      <div class="content content24"></div>
+      <div class="content content25"></div>
+      <div class="content content15"></div>
+      <div class="content content16"></div>
+      <div class="content content17"></div>
+      <div class="content content18"></div>
+      <div class="content content19"></div>
+      <div class="content content20"></div>
+      <div class="content content21"></div>
+      <div class="content content22"></div>
+      <div class="content content23"></div>
+      <div class="content content24"></div>
+      <div class="content content25"></div>
+    </div>
+
+    <script>
+      const colorProducer = () => {
+        let n = (Math.random() * 0xfffff * 1000000).toString(16);
+        return "#" + n.slice(0, 6);
+      };
+
+      const contents = document.querySelectorAll(".content");
+     let arr = [...contents];
+     
+     arr.forEach(el => {
+         el.addEventListener("mouseover",function(){
+             el.style.backgroundColor = `${colorProducer()}`
+         })
+     });
+    </script>
+  </body>
+</html>
