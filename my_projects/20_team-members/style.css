@@ -1,0 +1,23 @@
+.rotate {
+  width: 150px;
+  transform: rotate(90deg);
+  position: absolute;
+  font-family: "Montagu Slab", serif;
+  font-size: small;
+  opacity: 0.8;
+  top: 70px;
+  right: -90px;
+}
+
+p {
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  font-family: "Montagu Slab", serif;
+}

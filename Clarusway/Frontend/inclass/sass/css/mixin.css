@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box2, #third {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 15px;
+}
+
+#first {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 15px;
+}
+
+#second {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 15px;
+}
+
+#third {
+  float: left;
+}
+
+/* .loops{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding: 10px 15px;
+    @include condition("honkodwadng");
+};
+
+
+$arr:1,2,3,4;
+
+$arr2:(
+    1:100,
+    2:200,
+    3:300,
+    4:400
+);
+
+@each $element in $arr {
+    .i-element {
+        font-size: 10 + $element + px;
+    }
+}
+
+@each $x,$y in $arr2 {
+    .j-x {
+        width: $y+px;
+    }
+}
+ */
+/*for loop*/
+.ozkan1 {
+  width: 100px;
+}
+
+.ozkan2 {
+  width: 200px;
+}
+
+.ozkan3 {
+  width: 300px;
+}
+
+.ozkan4 {
+  width: 400px;
+}
+
+.ozkan5 {
+  width: 500px;
+}
+
+/*while loop*/
+.j-1 {
+  width: 100rem;
+}
+
+.j-2 {
+  width: 200rem;
+}
+
+.j-3 {
+  width: 300rem;
+}
+
+.j-4 {
+  width: 400rem;
+}
+
+.j-5 {
+  width: 500rem;
+}
+/*# sourceMappingURL=mixin.css.map */

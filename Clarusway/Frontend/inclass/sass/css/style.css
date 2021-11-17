@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #6e6eff;
+}
+
+nav {
+  margin-top: 15px;
+  background-color: darkorange;
+}
+
+.left {
+  float: left;
+  list-style-type: none;
+}
+
+.left li {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
+
+.cw, .linkedin {
+  padding: 15px;
+  color: white;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.cw:link, .linkedin:link {
+  background-color: #ad6f6f;
+}
+
+.cw:hover, .linkedin:hover {
+  background-color: #ad6f6f;
+}
+
+/*mapkeys*/
+body {
+  background-color: #aaa;
+}
+
+p {
+  font-weight: 400;
+}
+
+/*  div{
+    background-color: $primarycolor;
+    p{
+        color: $textcolor;
+    };
+ }; */
+/*# sourceMappingURL=style.css.map */
