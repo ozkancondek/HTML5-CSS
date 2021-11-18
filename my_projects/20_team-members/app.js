@@ -14,6 +14,7 @@ sbtn.addEventListener("click", function () {
     });
   } else {
     body.style.backgroundColor = "white";
+    body.style.color = "black";
     cards.forEach((el) => {
       el.style.backgroundColor = "white";
     });
