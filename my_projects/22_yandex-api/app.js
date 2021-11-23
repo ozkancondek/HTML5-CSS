@@ -10,6 +10,7 @@ function eventListener() {
   //change
   document.getElementById("language").onchange = function () {
     //ui process
+    UI.changeUI();
   };
 }
 
@@ -17,6 +18,7 @@ const translate = new Translate(
   document.getElementById("word").value,
   document.getElementById("language").value
 );
+const ui = new UI();
 function translateWord(e) {
   translate.changeParameters(
     document.getElementById("word").value,
@@ -24,6 +26,9 @@ function translateWord(e) {
   );
   translate.translateWord(function (err, respose) {
     if (err == null) {
+      console.log(err);
+    } else {
+      ui.displayTranslate();
     }
   });
   e.preventDefault();
