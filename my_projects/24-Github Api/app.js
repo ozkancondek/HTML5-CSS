@@ -33,7 +33,10 @@ function getData(e) {
           //error message
           ui.showError("User not found!");
         } else {
+          ui.addSearchedUserToUI(username);
+          Storage.addSearchedUserToStorage(username); // input value
           ui.showUserInfo(response.user); // response keeps two variable : check the return of async function in github class
+          ui.showRepoInfo(response.repo);
         }
       }) //response.name, response.repo ...
       .catch((err) => ui.showError(err));
@@ -42,8 +45,19 @@ function getData(e) {
   e.preventDefault();
 }
 
-function clearAllSearched() {}
+function clearAllSearched() {
+  if (confirm("Are you sure the delete them all?")) {
+    Storage.clearAllSearchedUsersFromStorage();
+    ui.clearAllSearchedFromUI();
+  }
+}
 
-function getAllsSearched() {}
+function getAllsSearched() {
+  let users = Storage.getSearchedUsersFromStorage();
+  result = "";
 
-console.log(window.navigator.userAgent);
+  users.forEach((user) => {
+    result += `<li class="list-group-item">${user}</li>`;
+  });
+  lastUsers.innerHTML = result;
+}
