@@ -1,4 +1,5 @@
 const renderCountry = (data, className = "") => {
+  // object destructing
   const {
     name: { common: countryName },
     region,
@@ -44,7 +45,7 @@ const getCountryData = async (countryName) => {
     const data = await response.json();
     const [countryDataObject] = data;
 
-    return countryDataObject;
+    return countryDataObject; // get data as object
   } catch (error) {
     console.log(error.message);
   }
@@ -59,7 +60,7 @@ const getBorders = async (countryName) => {
     const data = await response.json();
     const [countryDataObject] = data;
     const borders = countryDataObject.borders;
-    return borders;
+    return borders; //get data as array
   } catch (error) {
     console.log(error.message);
   }
@@ -68,14 +69,14 @@ const getBorders = async (countryName) => {
 const showCountry = async (countryName, b) => {
   const countryDataObject = await getCountryData(countryName);
 
-  renderCountry(countryDataObject, b);
+  renderCountry(countryDataObject, b); // show country
 };
 
 const showBorders = async (countryName) => {
   const borders = await getBorders(countryName);
   if (borders === undefined) {
-    const countryElm = document.getElementById("add");
-    countryElm.innerHTML += `<div class="alert alert-danger" role="alert">
+    const countryElm = document.getElementById("add"); //add alert message
+    countryElm.innerHTML += `<div class="alert alert-danger" role="alert"> 
   There is no neighbour country!
 </div>`;
   } else {
@@ -86,6 +87,7 @@ const showBorders = async (countryName) => {
 };
 
 const info = (countryName) => {
+  // call two function simultioniously
   showCountry(countryName);
 
   showBorders(countryName);
