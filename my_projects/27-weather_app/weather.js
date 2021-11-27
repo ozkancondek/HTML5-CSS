@@ -2,7 +2,7 @@ const form = document.querySelector(".top-banner form");
 
 const input = document.querySelector(".top-banner input");
 
-const message = document.querySelector(".top-banner .msg");
+const msg = document.querySelector(".top-banner .msg");
 
 const list = document.querySelector(".ajax-section .cities");
 
@@ -29,7 +29,32 @@ const getWeatherDataFromApi = async () => {
 
     const createdCitycardLi = document.createElement("li");
 
+    const filteredArray = [];
+
     createdCitycardLi.classList.add("city");
+    const cityListItems = Array.from(list.querySelectorAll(".city"));
+    if (cityListItems.length > 0) {
+      cityListItems.forEach((el) => {
+        if (
+          el.querySelector(".city-name span").innerText.toLowerCase() ==
+          name.toLowerCase()
+        ) {
+          filteredArray.push(el);
+        }
+      });
+
+      console.log(filteredArray);
+
+      if (filteredArray.length > 0) {
+        msg.innerText = `${
+          filteredArray[0].querySelector(".city-name span").innerText
+        } aldready exist. Please search for another city`;
+        form.reset();
+        input.focus();
+
+        return;
+      }
+    }
 
     createdCitycardLi.innerHTML = ` <h2 class="city-name" data-name="${name},${sys.country}">
           <span>${name}</span>
@@ -47,6 +72,6 @@ const getWeatherDataFromApi = async () => {
     form.reset();
     input.focus(); // user can add new input
   } catch (error) {
-    message.innerText = error;
+    msg.innerText = error;
   }
 };
