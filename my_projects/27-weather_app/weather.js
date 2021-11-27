@@ -20,23 +20,33 @@ const getWeatherDataFromApi = async () => {
   let apikey = DecryptStringAES(localStorage.getItem("apikey"));
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apikey}`;
 
-  const response = await axios.get(url); //default get
+  try {
+    const response = await axios.get(url); //default get
 
-  const { main, name, sys, weather } = response.data;
+    const { main, name, sys, weather } = response.data;
 
-  const iconurl = `https://s3-us-west-2.amazonaws.com/s/cdpn.io/162656/${weather[0].icon}.svg`;
+    const iconurl = `svg/${weather[0].icon}.svg`;
 
-  const createdCitycardLi = document.createElement("li");
+    const createdCitycardLi = document.createElement("li");
 
-  createdCitycardLi.classList.add("city");
+    createdCitycardLi.classList.add("city");
 
-  createdCitycardLi.innerHTML = ` <h2 class="city-name" data-name="İzmir,TR">
-          <span>İzmir</span>
-          <sup>TR</sup>
+    createdCitycardLi.innerHTML = ` <h2 class="city-name" data-name="${name},${sys.country}">
+          <span>${name}</span>
+          <sup>${sys.country}</sup>
         </h2>
-        <div class="city-temp">17<sup>°C</sup></div>
+        <div class="city-temp">${main.temp}<sup>°C</sup></div>
         <figure>
-          <img class="city-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/03n.svg">
-          <figcaption>scattered clouds</figcaption>
+          <img class="city-icon" src="${iconurl}">
+          <figcaption>$z}</figcaption>
         </figure>`;
+
+    list.appendChild(createdCitycardLi);
+
+    msg.inneText = "";
+    form.reset();
+    input.focus(); // user can add new input
+  } catch (error) {
+    message.innerText = error;
+  }
 };
