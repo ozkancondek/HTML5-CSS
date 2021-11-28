@@ -36,6 +36,8 @@ const renderCountry = (data, className = "") => {
   countryElm.style.opacity = 1;
 };
 
+//Country data function
+
 const getCountryData = async (countryName) => {
   try {
     const response = await fetch(
@@ -50,6 +52,8 @@ const getCountryData = async (countryName) => {
     console.log(error.message);
   }
 };
+
+//borser countries function
 
 const getBorders = async (countryName) => {
   try {
@@ -66,11 +70,15 @@ const getBorders = async (countryName) => {
   }
 };
 
+//add main country to UI
+
 const showCountry = async (countryName, b) => {
   const countryDataObject = await getCountryData(countryName);
 
   renderCountry(countryDataObject, b); // show country
 };
+
+//add border countries to UI
 
 const showBorders = async (countryName) => {
   const borders = await getBorders(countryName);
@@ -86,8 +94,9 @@ const showBorders = async (countryName) => {
   }
 };
 
+// call two function simultioniously
+
 const info = (countryName) => {
-  // call two function simultioniously
   showCountry(countryName);
 
   showBorders(countryName);
